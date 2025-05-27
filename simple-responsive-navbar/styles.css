@@ -12,12 +12,12 @@ body {
 main {
     text-align: center;
     padding: 2rem;
+    border: none;
 }
 .navbar-container{
     background-color: #110f41;
     color: #ffebcd;
     padding: 1rem;
-    position: relative;
 }
 .logo{
     font-size: 1.5rem;
@@ -39,6 +39,8 @@ main {
 }
 /* nav menu for mobile device */
 .nav-links {
+    position: relative;
+    z-index: 1000;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -50,6 +52,7 @@ main {
     max-height: 0;
     opacity: 0;
     transition: max-height 0.4s ease, opacity 0.4s ease;
+
 }
 .nav-links li {
     padding: 0.5rem;
@@ -59,10 +62,26 @@ main {
     text-decoration: none;
     font-size: 1.2rem;
 }
+.menu-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    opacity: 0;
+    z-index: 999;
+    transition: opacity 0.1s ease;
+
+}
+
 .nav-links.active {
   max-height: 500px; /* Enough to show all items */
   opacity: 1;
   
+}
+.menu-overlay.active{
+  max-height: 500px; /* Enough to show all items */
+  opacity: 1;
+
 }
 .hamburger.active{
     border: none;
@@ -83,6 +102,10 @@ main {
         opacity: 1;
         border: none;
         padding: 0;
+        overflow: hidden;
+    }
+    .menu-overlay {
+        display: none;
     }
     .hamburger {
         display: none;
