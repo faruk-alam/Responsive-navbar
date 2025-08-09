@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mega Responsive Navbar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar Overlay -->
+    <div class="navbar-overlay"></div>
+    
+    <!-- Fixed Navbar -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <!-- Navbar Header with Brand and Toggle -->
+            <div class="navbar-header">
+                <a href="#" class="navbar-brand">Your Brand</a>
+                <button class="navbar-toggle">
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                    <span class="toggle-bar"></span>
+                </button>
+            </div>
+            
+            <!-- Main Navigation -->
+            <div class="navbar-menu">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    
+                    <!-- Mega Menu Item -->
+                    <li class="nav-item has-megamenu">
+                        <a href="#" class="nav-link">
+                            Products 
+                            <i class="dropdown-icon fas fa-chevron-down"></i>
+                        </a>
+                        
+                        <!-- Mega Menu Content -->
+                        <div class="megamenu">
+                            <div class="megamenu-header">
+                                <button class="back-button">
+                                    <i class="fas fa-arrow-left"></i> Back
+                                </button>
+                                <h3>Products</h3>
+                            </div>
+                            
+                            <div class="megamenu-content">
+                                <!-- Column 1 -->
+                                <div class="megamenu-column">
+                                    <h4>Electronics</h4>
+                                    <ul>
+                                        <li><a href="#">Smartphones</a></li>
+                                        <li><a href="#">Laptops</a></li>
+                                        <li class="has-submenu">
+                                            <a href="#">
+                                                Accessories 
+                                                <i class="nested-icon fas fa-chevron-right"></i>
+                                            </a>
+                                            <!-- Nested Submenu -->
+                                            <div class="submenu">
+                                                <div class="submenu-header">
+                                                    <button class="back-button">
+                                                        <i class="fas fa-arrow-left"></i> Back
+                                                    </button>
+                                                    <h3>Accessories</h3>
+                                                </div>
+                                                <ul>
+                                                    <li><a href="#">Headphones</a></li>
+                                                    <li><a href="#">Cases</a></li>
+                                                    <li><a href="#">Chargers</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <!-- Column 2 -->
+                                <div class="megamenu-column">
+                                    <h4>Home Appliances</h4>
+                                    <ul>
+                                        <li><a href="#">Refrigerators</a></li>
+                                        <li><a href="#">Washing Machines</a></li>
+                                        <li><a href="#">Air Conditioners</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a>
+                    </li>
+                    
+                    <li class="nav-item has-submenu">
+                        <a href="#" class="nav-link">
+                            Services 
+                            <i class="dropdown-icon fas fa-chevron-down"></i>
+                        </a>
+                        <!-- Regular Submenu -->
+                        <div class="submenu">
+                            <div class="submenu-header">
+                                <button class="back-button">
+                                    <i class="fas fa-arrow-left"></i> Back
+                                </button>
+                                <h3>Services</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Consulting</a></li>
+                                <li><a href="#">Installation</a></li>
+                                <li><a href="#">Support</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main style="padding-top: 70px;">
+        <h1>Main Content</h1>
+        <p>This content appears below the fixed navbar.</p>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

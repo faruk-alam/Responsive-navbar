@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>slide-out-overaly-navbar-css</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+
+ 
+</head>
+
+<body class="m-0 p-o font-arial">
+ <!-- Navbar -->
+ <nav class="fixed top-0 w-screen z-50 bg-blue-950 text-white p-6">
+  <div class="flex items-center justify-between max-w-6xl mx-auto">
+   <div class="text-2xl font-bold">Logo</div>
+
+   <!-- Desktop Menu -->
+   <div class="space-x-6 hidden md:flex md:justify-end text-lg">
+    <a href="#" class="hover:bg-blue-200 hover:text-blue-800 px-3 py-1 rounded-md">Home</a>
+    <a href="#" class="hover:bg-blue-200 hover:text-blue-800 px-3 py-1 rounded-md">About</a>
+    <a href="#" class="hover:bg-blue-200 hover:text-blue-800 px-3 py-1 rounded-md">Services</a>
+    <a href="#" class="hover:bg-blue-200 hover:text-blue-800 px-3 py-1 rounded-md">Contact</a>
+   </div>
+   <!-- Mobile Menu Toggle -->
+   <button class="block md:hidden" id="menuToggle">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+</svg>
+
+   </button>
+  </div>
+
+
+  <!-- Mobile Menu -->
+  <div class="hidden transition ease-out duration-5000 fixed top-0 left-0 px-8 py-6 h-screen bg-blue-950" id="mobileMenu">
+   <div class="flex items-center justify-between pb-4 mb-4 ">
+
+    <!-- close mobile menu -->
+    <button class="close-menu" id="closeMenu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+</svg>
+
+    </button>
+   </div>
+
+   <div class="flex flex-col space-y-6 py-5 text-lg">
+    <a href="#"  class="nav-links px-2 hover:text-sky-300">Home</a>
+    <a href="#"  class="nav-links px-2 hover:text-sky-300">About</a>
+    <a href="#"  class="nav-links px-2 hover:text-sky-300">Services</a>
+    <a href="#"  class="nav-links px-2 hover:text-sky-300">Contact</a>
+   </div>
+  </div>
+ </nav>
+
+ <!-- Page Content -->
+ <main class="relative z-40 p-6 max-w-6xl mx-auto">
+  <h1>Welcome to our website</h1>
+  <p>Resize your browser to see the responsive navbar in action.</p>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel delectus, magnam atque laudantium sunt blanditiis nam repellendus similique ipsam illo repellat sapiente laborum ab dolor cumque in aliquid animi eaque explicabo excepturi ea possimus amet neque? Aut quisquam deserunt ratione, consequuntur ad tempora placeat ipsa quis, consectetur porro quaerat. Consequuntur hic unde dolorum error doloremque debitis nesciunt, facilis recusandae alias tempore minima corrupti expedita qui excepturi labore quis et ullam, accusamus veniam! Tempora temporibus doloribus, numquam, quam hic quos dolorum fugit saepe alias, et sunt accusamus voluptate vitae libero accusantium repudiandae. Adipisci enim possimus odit voluptatum tenetur, animi a ullam. Porro minus voluptatum, facere vitae, consectetur est accusantium, obcaecati ab dicta optio eos officiis nesciunt incidunt qui iusto quibusdam! Iusto unde consequatur, officia eveniet est non necessitatibus quibusdam ratione similique eum, veniam eius consectetur sit officiis nihil! Non, eum sed totam, unde esse eius delectus perferendis inventore laborum illo illum, veritatis qui voluptatibus quas temporibus! Sed, laboriosam. Illo quod ex possimus nam ea obcaecati, perspiciatis nihil eos placeat atque ducimus. Dicta eius alias molestias odit deserunt tempore quidem ducimus, nostrum laborum veniam animi totam corporis. Possimus mollitia ullam porro impedit enim commodi totam. A aperiam animi dolore illum corporis asperiores accusantium soluta repellendus eius optio. Fugiat atque expedita nobis repudiandae mollitia repellat culpa similique ipsam ratione libero corrupti nulla adipisci dolores temporibus fuga cupiditate quisquam odio quasi, possimus totam sequi dolorum quam? Alias eveniet tenetur, quos nostrum culpa doloremque magni amet incidunt quisquam labore, beatae eligendi sequi dolorum soluta molestiae. Iusto ea odio voluptatum enim laboriosam, corporis corrupti totam quae in quos rerum aliquid nisi veniam deserunt incidunt ab nemo quam quaerat nobis. Nisi velit aliquid ipsum? Corporis voluptatum quasi ratione, mollitia neque modi. Asperiores, itaque debitis? Aperiam, consequatur assumenda. Minus id, itaque voluptate reiciendis optio fugiat commodi facere et numquam velit necessitatibus rem odit culpa quas illo deleniti qui repudiandae maxime soluta magni corrupti repellendus, voluptas ex deserunt. Perspiciatis tenetur autem minus quos blanditiis exercitationem minima aspernatur, provident nihil et odio, facilis ad ratione soluta repudiandae reiciendis non sit fugit at voluptate modi? Nihil neque soluta, nesciunt officia nemo iste nostrum aspernatur tenetur illum. Odio accusamus est autem dolor eum, nihil aliquid fugit beatae sunt excepturi. Voluptatem quam doloribus maxime enim. Mollitia culpa facilis numquam ut libero aspernatur velit consequuntur ad odio optio cumque consequatur, non, assumenda veritatis necessitatibus impedit deleniti provident debitis at reprehenderit magni. Officiis dolorum aperiam ad temporibus nihil qui iure veritatis aut atque expedita iusto harum illo consequuntur amet, ea earum facere autem omnis in hic tempora? Harum, adipisci possimus tempore nulla corporis architecto error fugit optio corrupti! Nemo quaerat ea nihil aliquid quis velit tenetur molestiae dolorem amet commodi enim odio obcaecati labore eum est iste, fugit sequi sapiente ad asperiores non alias? Numquam, neque explicabo consequuntur, eveniet nobis necessitatibus quasi fugiat, cum ipsa incidunt ratione corrupti vitae eligendi similique repudiandae tempora? Obcaecati ipsa placeat provident, quasi nam ullam consequuntur vitae non voluptates error exercitationem id, tempore sunt vel dolores sed et. Ipsam sequi ab dicta provident, ea ducimus saepe velit? Id minima, laboriosam, harum eligendi, quibusdam at alias mollitia voluptatem atque beatae vero optio esse temporibus doloribus voluptatibus odio? Possimus totam perspiciatis provident aliquam nam repudiandae harum, hic vero accusamus fuga architecto quisquam mollitia tempora molestiae repellat? Ullam facere aspernatur laboriosam similique veniam obcaecati earum eum ea laudantium amet nostrum hic dicta dolorum alias fugit, labore exercitationem, non adipisci sapiente. Provident praesentium, explicabo pariatur aperiam repellat optio laboriosam dignissimos nulla sequi eum. Sapiente eveniet ducimus quia. Dolores rerum necessitatibus saepe at aliquid quia, totam sunt ea labore ex quo tenetur nesciunt voluptatibus voluptates expedita magni perspiciatis explicabo? Omnis, suscipit excepturi fuga cum exercitationem veritatis ad obcaecati doloribus aut in veniam necessitatibus architecto odio quaerat magnam expedita laudantium. Molestiae maxime fugiat aperiam libero distinctio cupiditate, eaque porro fugit commodi necessitatibus amet quas blanditiis cum, consequuntur doloribus, modi beatae culpa esse! Vitae, odio. Ipsa corporis commodi nemo laudantium nesciunt quae sequi ea mollitia deleniti nobis? Mollitia animi quibusdam commodi tempore, eveniet perferendis tenetur autem, fuga accusantium, labore quae reprehenderit nostrum quas impedit necessitatibus? Sint quas fuga praesentium labore libero veritatis similique nemo. Deserunt deleniti nemo, quod aspernatur, adipisci doloremque voluptates est, molestiae exercitationem officia cumque laudantium qui. Velit, earum? Modi facere beatae, amet iste repudiandae labore laborum obcaecati porro nulla maxime ipsam ea, tempora, sapiente voluptate magni libero. Delectus totam explicabo unde possimus provident in officia sapiente incidunt magnam, deleniti ut quasi, minima magni eaque quaerat repellat et harum corrupti nulla nesciunt! Facere non sequi vero excepturi ipsa neque alias eos maxime tenetur quia corporis laboriosam voluptas dignissimos dolores velit voluptates, debitis distinctio nostrum numquam aperiam fuga quaerat! Ipsam, sequi. Vero enim mollitia eligendi similique adipisci dolorum rem ad possimus aperiam dolor. Quo, suscipit perspiciatis. Itaque corporis repudiandae possimus totam accusantium ea at quas debitis sed. Aperiam consequatur veritatis assumenda, expedita, sunt ad eius nam dolor qui unde tempore pariatur nobis aspernatur autem recusandae officiis nulla dicta, ea modi voluptate quasi iusto! Mollitia eius quis deserunt inventore repudiandae, nam molestiae ipsa corrupti quibusdam explicabo illum esse numquam libero! Eaque sint labore voluptas impedit doloremque deleniti praesentium quis ut vero ea voluptatum eum, eligendi hic pariatur exercitationem dicta cupiditate libero enim assumenda distinctio vel, excepturi amet aliquam laborum? Alias fugit accusamus omnis inventore perferendis quo aliquid dignissimos, quibusdam exercitationem natus doloremque quod repellat animi, nemo in. Nisi alias aperiam sunt, cum perspiciatis blanditiis natus harum recusandae saepe, iusto, deserunt beatae pariatur. Ducimus, maxime! Id velit excepturi sequi eveniet, cum eum libero repudiandae saepe molestias placeat distinctio, labore nostrum adipisci dolorem assumenda minus. Obcaecati blanditiis non optio amet earum quas quisquam deleniti provident quis! Delectus ea cumque, magni dolore architecto aperiam molestias doloribus vel quasi excepturi expedita? Atque nulla corrupti dignissimos nesciunt, ipsum enim quasi, aliquam distinctio quia officiis totam ullam voluptatum animi esse, eum tenetur veniam quas quibusdam neque! Dolore, ut dicta. Error iste ut qui, eos aliquam quasi distinctio maiores ipsam officia deserunt est, similique corrupti nemo soluta eaque ea ad fugiat nisi quaerat. Error.</p>
+ </main>
+
+ <script src="main.js"></script>
+
+</body>
+
+</html>
